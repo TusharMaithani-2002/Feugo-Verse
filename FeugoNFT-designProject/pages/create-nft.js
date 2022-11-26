@@ -5,8 +5,8 @@ import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
 
 
-const projectId='2FnKfrWQLgNGvoAJdla6njvBtjL'
-const projectSecret='1cd1acc4f7832bb3b8b3a8aec8e517ba';
+const projectId=''
+const projectSecret='';
 const auth = 'Basic '+Buffer.from(projectId+":"+projectSecret).toString('base64')
 
 const client = ipfsHttpClient({
@@ -152,7 +152,7 @@ export default function CreateItem() {
         </button> */}
       </div>
     </div>
-        {/* <button onClick={()=>confirmBox()}>confirm box</button> */}
+       
         <div className='h-screen w-100 flex justify-center items-center hidden' id="confirm-box">
 
          <div className='w-4/5 bg-gray-600 h-2/3 flex flex-col justify-evenly items-center'>

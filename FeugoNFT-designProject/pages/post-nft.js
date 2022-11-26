@@ -6,8 +6,8 @@ import { create as ipfsHttpClient } from 'ipfs-http-client'
 // const fs = require('fs')
 import Axios from 'axios'
 import PostCard from './PostCard';
-const projectId='2FnKfrWQLgNGvoAJdla6njvBtjL'
-const projectSecret='1cd1acc4f7832bb3b8b3a8aec8e517ba';
+const projectId=''
+const projectSecret='';
 const auth = 'Basic '+Buffer.from(projectId+":"+projectSecret).toString('base64')
 
 const client = ipfsHttpClient({
